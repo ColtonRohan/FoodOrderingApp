@@ -2,6 +2,7 @@ import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import { useState } from "react";
+import CartProvider from "./store/CartProvider";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -15,14 +16,13 @@ function App() {
   };
 
   return (
-    <>
-      <h2>Let's get started!</h2>
+    <CartProvider>
       {showModal && <Cart onClose={hideModalHandler} />}
       <Header onShowCart={showModalHandler} />
       <main>
         <Meals />
       </main>
-    </>
+    </CartProvider>
   );
 }
 

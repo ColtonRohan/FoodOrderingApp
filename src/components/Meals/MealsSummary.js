@@ -6,12 +6,13 @@ const MealsSummary = () => {
     <section className={classes.summary}>
       <h2>Great Food At Great Prices</h2>
       <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
+        Pick your favorite meal based on our wide selection of menu options!
       </p>
       <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
+        The meals are prepared with high-quality ingredients that focus on fresh
+        and flavorful dishes. The meals are prepared just-in-time meaning they
+        are made to order, ensuring that they are as fresh as possible when they
+        are delivered to your door.
       </p>
     </section>
   );

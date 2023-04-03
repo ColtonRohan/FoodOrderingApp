@@ -3,11 +3,13 @@ import classes from "./MealItemForm.module.css";
 import Input from "../../UI/Input";
 
 const MealItemForm = (props) => {
+  //refs are used to obtain the value from inside the input, but we use a custom componetnt for input so theres another step to add in our custom input
   const amountInputRef = useRef();
   const [valid, setValid] = useState(true);
 
   const submitHandler = (event) => {
     event.preventDefault();
+    // refs are always stores as a string, even if its a number, use the + operator to turn enteredAmount into an int
     const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
 

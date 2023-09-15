@@ -42,6 +42,7 @@ const AvailableMeals = () => {
       />
     );
   });
+  console.log(mealsList);
 
   return (
     <section className={classes.meals}>
